@@ -1,9 +1,9 @@
-import { ADD_ACTION, REMOVE_ACTION, UPDATE_ACTION, COMPLETE_ACTION, PRIORITY_ACTION } from '../constants/ActionTypes';
+import { ADD_ACTION, REMOVE_ACTION, UPDATE_ACTION, COMPLETE_ACTION } from '../constants/ActionTypes';
 
-export const add = ({ completed, id, item }) => {
+export const add = ({ completed, id, item, priority }) => {
     return {
         type: ADD_ACTION,
-        payload: { completed, id, item }
+        payload: { completed, id, item, priority }
     };
 };
 
@@ -30,9 +30,9 @@ export const complete = (id) => {
     };
 };
 
-export const priority = ({ level }) => {
-    return {
-        type: PRIORITY_ACTION,
-        payload: { level }
-    };
-};
+// export const priority = ({ level }) => {
+//     return {
+//         type: PRIORITY_ACTION,
+//         payload: { level }
+//     };
+// };

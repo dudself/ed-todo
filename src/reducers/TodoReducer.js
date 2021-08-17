@@ -1,16 +1,9 @@
 import I from 'immutable';
-import { combineReducers } from 'redux';
-import { ADD_ACTION, REMOVE_ACTION, UPDATE_ACTION, COMPLETE_ACTION, PRIORITY_ACTION } from '../constants/ActionTypes';
+import { ADD_ACTION, REMOVE_ACTION, UPDATE_ACTION, COMPLETE_ACTION } from '../constants/ActionTypes';
 
 const stateObject = {
     filter: ``,
-    priority: ['high', 'medium', 'low'],
-    allTodos:
-    {
-        completed: false,
-        item: ``,
-        id: ``,
-    },
+    allTodos: [],
 };
 
 const INITIAL_STATE_IMMUTABLE = I.fromJS(stateObject);
@@ -19,7 +12,8 @@ const TodoReducer = (state = INITIAL_STATE_IMMUTABLE, action) => {
     switch (action.type) {
 
         case ADD_ACTION:
-            return state.set(state.allTodos, action.payload);
+            const newTodos = state.get('allTodos').push(action.payload);
+            return state.set('allTodos', newTodos);
 
         case REMOVE_ACTION:
             return state.map((item) => {
@@ -61,17 +55,12 @@ const TodoReducer = (state = INITIAL_STATE_IMMUTABLE, action) => {
                 return state;
             });
 
-        case PRIORITY_ACTION:
-            return state.set(state.priority, action.payload);
+        // case PRIORITY_ACTION:
+        //     return state.set(state.priority, action.payload);
 
         default:
             return state;
     }
 };
 
-const TodoReducerFin = combineReducers({
-    obj: stateObject,
-    todo: TodoReducer,
-});
-
-export default TodoReducerFin;
+export default TodoReducer;

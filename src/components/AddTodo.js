@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
-import { add, priority } from "../actions/TodoActions";
+import { add } from "../actions/TodoActions";
 import "../css/addTodo.css";
 
 const AddTodo = (props) => {
@@ -25,10 +25,11 @@ const AddTodo = (props) => {
                     id: Math.floor(Math.random() * 1000),
                     item: todo,
                     completed: false,
+                    priority: level,
                 },
             );
 
-            props.addPriority(level);
+            // props.addPriority(level);
 
             setTodo("");
             setPriority("");
@@ -105,7 +106,6 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = {
     addTodo: add,
-    addPriority: priority
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(AddTodo);
