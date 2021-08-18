@@ -1,13 +1,42 @@
 import './App.css';
-import AddTodo from "./components/AddTodo";
+import { connect } from "react-redux"
+import Header from "./components/Header"
+import Main from "./components/Main"
+import Todo from "./components/Todo"
 import "./css/addTodo.css";
+import { changeMode } from "./actions/appActions";
+import { getAppMode } from "./selectors/appSelectors";
+import Priority from './components/Priority';
 
-function App() {
+function App(props) {
+    console.log(props.mode);
+    const onClickAdd = () => {
+        props.changeMode("add");
+    }
     return (
         <div className="App">
-            <AddTodo />
+            <Header />
+            {props.mode === "main" && (
+                <>
+                    <Main />
+                    <button onClick={onClickAdd}>Add</button>
+                </>
+            )}
+
+            {props.mode === "add" && <Todo changeMode={props.changeMode} />}
+            {props.mode === "priority" && <Priority changeMode={props.changeMode} />}
         </div>
     );
 }
 
-export default App;
+const mapStateToProps = (state) => {
+    return {
+        mode: getAppMode(state),
+    };
+}
+
+const mapActionsToProps = {
+    changeMode,
+}
+
+export default connect(mapStateToProps, mapActionsToProps)(App);

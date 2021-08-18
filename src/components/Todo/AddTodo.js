@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
-import { add } from "../actions/TodoActions";
+import { add } from "../../actions/TodoActions";
 import "../css/addTodo.css";
 
 const AddTodo = (props) => {
