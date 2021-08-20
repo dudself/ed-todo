@@ -3,7 +3,6 @@ import { connect } from "react-redux"
 import Header from "./components/Header"
 import Main from "./components/Main"
 import Todo from "./components/Todo"
-import "./css/addTodo.css";
 import { changeMode } from "./actions/appActions";
 import { getAppMode } from "./selectors/appSelectors";
 import Priority from './components/Priority';
@@ -19,7 +18,7 @@ function App(props) {
             {props.mode === "main" && (
                 <>
                     <Main />
-                    <button onClick={onClickAdd}>Add</button>
+                    <button className="add-btn" onClick={onClickAdd}>Add</button>
                 </>
             )}
 

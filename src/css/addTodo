@@ -1,8 +1,4 @@
-*,
-*:after,
-*:before{
-    box-sizing: border-box;
-}
+
 
 body {
 	top: 0px;

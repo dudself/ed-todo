@@ -7,8 +7,8 @@ const Bucket = (props) => {
         props.openBucket(props.priority);
     }
     return (
-        <div onClick={onPriorityClick}>
-            Bucket: {props.priority},
+        <div className="buckets" onClick={onPriorityClick}>
+            <div> Bucket: {props.priority} </div>
         </div>
     );
 }

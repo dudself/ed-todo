@@ -1,12 +1,11 @@
 import React from "react";
 
-const Greetings = () => {
-    const name = "Vin";
+const Rewards = () => {
     return (
         <div className="greet">
-            Hi, {name}
+            REWARDS
         </div>
     );
 }
 
-export default Greetings;
+export default Rewards;
