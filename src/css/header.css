@@ -4,7 +4,7 @@
     position: absolute;
     width: 203px;
     height: 35px;
-    left: 83px;
+    left: 93px;
     top: 14px;
     display: flex;
     align-items: center;
@@ -17,7 +17,7 @@
     position: absolute;
     width: 160px;
     height: 20px;
-    left: 83px;
+    left: 93px;
     top: 40px;
     font-size: 12px;
 }
@@ -28,7 +28,7 @@
     position: absolute;
     width: 83px;
     height: 30.75px;
-    right: 27px;
+    right: 5px;
     top: 19px;
     font-size: 12px;
 
@@ -50,7 +50,7 @@
     position: absolute;
     width: 56px;
     height: 56px;
-    left: 22px;
+    left: 32px;
     top: 19px;
     filter: drop-shadow(-4px 4px 6px rgba(0, 0, 0, 0.14));
 }

@@ -1,7 +1,7 @@
 .currentTodo{
     position: absolute;
-    top: 100px;
-    width: 400px;
+    top: 80px;
+    width: 365px;
     height: 300px;
     background: rgba(255, 255, 255, 0.01);
     border: 1px solid #F16464;
@@ -11,19 +11,15 @@
 
 }
 .title{
-    align-items: center;
-    font-weight: 700;
     display: flex;
     flex-direction: column;
-    text-align: center;
     position: absolute;
-    width: 400px;
+    width: 365px;
     height: 300px;
 
 }
 
 .checklist{
-    font-weight: 400;
     font-style: italic;
     display: flex;
     flex-direction: column;
@@ -34,18 +30,15 @@
 }
 
 .buckets{
-    font-weight: 400;
     font-style: italic;
     position:relative;
-    top: 350px;
+    top: 430px;
     display: flex;
     flex-direction: column;
-    height: 150px;
-    width: 150px;
-    margin-top: 10px;
+    height: 110px;
+    width: 140px;
     padding: 5px;
     border: 1px solid #F16464;
-    box-sizing: border-box;
     border-radius: 17px;
 
 }
@@ -60,13 +53,14 @@
   }
 
 .rewards{
-    position:relative;
-    top: 330px;
+    position: relative;
+    top: 430px;
     display: flex;
     flex-direction: column;
     height: 150px;
     text-align: left;
-    left: -40px;
-    width: 150px;
+    left: -90px;
+    width: 130px;
     margin-top: 10px; 
 }
+

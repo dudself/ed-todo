@@ -7,8 +7,17 @@ const Priority = (props) => {
         props.changeMode("main");
     }
     return (
-        <div>
-            Priority: {props.activeBucket},
+        <div className="bucket-box">
+
+            Priority: {props.activeBucket}
+            <div className="filter">
+                <div className="all-filter">High</div>
+                <div className="completed-filter">Medium</div>
+                <div className="active-filter">Low</div>
+            </div>
+            <div className="todo-list">
+                Eat Breakfast
+            </div>
             <button onClick={onGoBackClick}>Back</button>
         </div>
     );
