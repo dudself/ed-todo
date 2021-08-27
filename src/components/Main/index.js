@@ -8,10 +8,10 @@ const Main = () => {
         <div>
             <CurrentTodo />
             <div className="wrappingBuckets">
-                <div className="high"><Bucket priority="high" /></div>
-                <div className="med"><Bucket priority="medium" /></div>
-                <div className="low"><Bucket priority="low" /></div>
-                <div className="rewards"><Rewards /></div>
+                <Bucket priority="high" />
+                <Bucket priority="medium" />
+                <Bucket priority="low" />
+                <Rewards />
             </div>
         </div >
     );

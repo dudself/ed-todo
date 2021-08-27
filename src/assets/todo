@@ -1,0 +1,7 @@
+- [ok]  Using Form HTML element in Todo/index.js file
+- [ok]  Move wrapper divs in Main/index.js file into their respected components
+- [ok]  Main/bucket.js work with allTodos fake data, and filter by priority, and render only the first three items (filter, slice and map methods will be used)
+- [ ]  Priority/index.js
+    - [ok]  use radio buttons for filter selection
+    - [ok]  todo list items should be Components
+    - [ ]  After Todo Items are implemented as seperate component, they will use internal states for expand/fold functionality

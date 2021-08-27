@@ -31,13 +31,15 @@
 
 .buckets{
     font-style: italic;
+    font-size: 14px;
+    text-align: left;
     position:relative;
-    top: 430px;
+    top: 400px;
     display: flex;
     flex-direction: column;
     height: 110px;
-    width: 140px;
-    padding: 5px;
+    width: 100px;
+    padding: 7px;
     border: 1px solid #F16464;
     border-radius: 17px;
 
@@ -48,7 +50,7 @@
 }
 
 .wrappingBuckets>* {
-    flex: 1 1 160px;
+    flex: 1 1 100px;
     margin: 10px;
   }
 
