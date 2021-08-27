@@ -2,7 +2,7 @@ import React from "react";
 
 const Rewards = () => {
     return (
-        <div className="greet">
+        <div className="rewards">
             REWARDS
         </div>
     );

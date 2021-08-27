@@ -34,7 +34,7 @@
     font-size: 14px;
     text-align: left;
     position:relative;
-    top: 400px;
+    top: 385px;
     display: flex;
     flex-direction: column;
     height: 110px;
@@ -51,17 +51,17 @@
 
 .wrappingBuckets>* {
     flex: 1 1 100px;
-    margin: 10px;
+    margin: 8px;
   }
 
 .rewards{
     position: relative;
-    top: 430px;
+    font-weight: 700;
+    top: 400px;
     display: flex;
     flex-direction: column;
     height: 150px;
     text-align: left;
-    left: -90px;
     width: 130px;
     margin-top: 10px; 
 }
