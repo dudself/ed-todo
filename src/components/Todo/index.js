@@ -33,7 +33,6 @@ const Todo = (props) => {
                 <div className="checklist-add">
                     <textarea className="checklist-todo"
                         onInput={(event) => handleChecklist(event)}
-                        cols="35" rows="20"
                     />
                 </div>
                 <h3 className="priority">Select priority of the task</h3>
