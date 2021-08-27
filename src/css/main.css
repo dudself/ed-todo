@@ -34,7 +34,7 @@
     font-size: 14px;
     text-align: left;
     position:relative;
-    top: 385px;
+    top: 430px;
     display: flex;
     flex-direction: column;
     height: 110px;
@@ -57,7 +57,7 @@
 .rewards{
     position: relative;
     font-weight: 700;
-    top: 400px;
+    top: 430px;
     display: flex;
     flex-direction: column;
     height: 150px;

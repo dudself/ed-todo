@@ -38,7 +38,7 @@
 .todo{
     font-size: 22px;
     position: absolute;
-    top: 55px;
+    top: 60px;
     left:32px;
     width: 300px;
     height: 40px;
@@ -60,7 +60,14 @@
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
     border-radius: 17px;
 }
-
+.checklist-todo{
+    padding: 20px;
+    top:-1px;
+    border: none;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+}
 .priority{
     padding-top: 220px;
 }
@@ -127,4 +134,22 @@ box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
 border-radius: 0px  0px;
 }
 
+.back-btn{
+    color:honeydew;
+      display: flex;
+      font-size: 22px;
+      line-height: 35px;
+      flex-direction: column;
+      margin:auto;
+      background: #bd3f49;
+      border: 1px solid #bd3f5a;
+      box-sizing: border-box;
+      box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+      border-radius: 17px;
+      align-items: center;
+      position: relative;
+      top: 5px;
+      width: 365px;
+      height: 41px;
+}
 

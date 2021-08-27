@@ -26,7 +26,7 @@ const Priority = (props) => {
                     .map(todo => <TodoItem todo={todo} />)
                 }
             </div>
-            <button onClick={onReturnClick}>Back</button>
+            <button className="back-btn" onClick={onReturnClick}>Back</button>
         </div>
     );
 }
